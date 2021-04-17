@@ -1,6 +1,7 @@
 import tkinter as tk
 import tkinter.ttk as ttk
 import requests
+TOKEN = 'UPDATE TOKEN HERE'
 
 class URLShortner:
     def __init__(self, master=None):
@@ -43,7 +44,7 @@ class URLShortner:
         if long_url.startswith('http://') or long_url.startswith('https://') or long_url.startswith('ftp://'):
 
             headers = {
-                'Authorization': 'Bearer 90344ea1864ca288d97775403390a23ae6f9e83b',
+                'Authorization': f'Bearer {TOKEN}',
                 'Content-Type': 'application/json',
             }
 
